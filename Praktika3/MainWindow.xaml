@@ -1,0 +1,32 @@
+﻿<Window x:Class="Praktika3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Praktika3"
+        mc:Ignorable="d"
+        Loaded="New_Loaded"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="OrdersFullDataGrid"  AutoGenerateColumns="False" Background="#FF9741E2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Айди заказа инфо" Binding="{Binding ID_OrderInfo}"/>
+                <DataGridTextColumn Header="Количество книжек" Binding="{Binding Kol_Vo}"/>
+                <DataGridTextColumn Header="Айди заказа инфо" Binding="{Binding Order_ID}"/>
+                <DataGridTextColumn Header="Айди книжки инфо" Binding="{Binding Book_ID}"/>
+                <DataGridTextColumn Header="Номер заказа" Binding="{Binding ID_Order}"/>
+                <DataGridTextColumn Header="Дата заказа" Binding="{Binding OrderDate}"/>
+                <DataGridTextColumn Header="Айди клиента заказ" Binding="{Binding Customer_ID}"/>
+                <DataGridTextColumn Header="Айди книжки" Binding="{Binding ID_Book}"/>
+                <DataGridTextColumn Header="Название книжки" Binding="{Binding NameOfBook}"/>
+                <DataGridTextColumn Header="Автор" Binding="{Binding Author}"/>
+                <DataGridTextColumn Header="Цена" Binding="{Binding Price}"/>
+                <DataGridTextColumn Header="Айди клиента" Binding="{Binding ID_Customer}"/>
+                <DataGridTextColumn Header="Имя клиента" Binding="{Binding CustomerName}"/>
+                <DataGridTextColumn Header="Фамилия клиента" Binding="{Binding CustomerSurname}"/>
+                <DataGridTextColumn Header="Отчество клиента" Binding="{Binding CustomerMiddleName}"/>
+                <DataGridTextColumn Header="Тел.Номер клиента" Binding="{Binding PhoneNumber}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
